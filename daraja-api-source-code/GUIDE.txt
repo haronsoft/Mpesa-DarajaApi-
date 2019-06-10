@@ -1,0 +1,91 @@
+
+Hello World!,
+
+Welcome to Documentation V1!
+
+This File is to help you get things up and Working in the shortest time possible
+------------------------------------------------------------------------------------------
+
+
+IT IS MY HOPE THAT YOU WILL READ THIS BEFORE THE CODE STARTS INTIMIDATING YOU,
+				*IF IT DOES, WE'RE NOT RESPONSIBLE!*
+
+
+-------------------------------------------------------------------------------------------
+1. Open the FinalCode Folder and open the file params.php
+	- Provide you ConsumerKey and ConsumerSecret required on the file
+	- Fill all the urls, these URLs you will provide there are where M-PESA gateway will send
+	the Responses to. They should be the secret between you and M-PESA, (Although we know a secret is between one person only)
+
+2. Open The Folder FinalCode and open the file config.class.php
+	- Populate your database information here.
+
+3. Import the db.sql tables(Located at folder FinalCode) to get your database up. We have not Optimised the database and we even 
+	can't tell at what NF it is currently :(, but we know it serves the purpose.
+
+---------------------------------------------------------------------------------------------
+== MAKING REQUESTS ==
+---------------------------------------------------------------------------------------------
+This is sort of a simpler way of making payments via the api.
+
+- All your requests should go to the path-to/secure/{required-api-call} 
+	e.g if you're making a LNMO request, send a POST request with what is required /secure/lnmo.php
+
+- Each File on the /secure/ folder has instructions just before the $_POST variable, explainingexactly what you need to have
+  on your post to use on M-PESA API. This does not mean you can't have other things that you wish to save on your database, but
+  when they reach here, split to have only required data sent to M-PESA.
+
+ ---------------------------------------------------------------------------------------------
+
+Hurray! Thats all.
+
+Before you do something, ensure you don't delete the /secure/index.php and /FinalCode/index.php, they have a very important use.
+Only Delete them if you know their use.
+
+<survtechke>
+
+────────────────────▄▄▄▄
+────────────────▄▄█▀▀──▀▀█▄
+─────────────▄█▀▀─────────▀▀█▄
+────────────▄█▀──▄▄▄▄▄▄──────▀█
+────────────█───█▌────▀▀█▄─────█
+────────────█──▄█────────▀▀▀█──█
+────────────█──█──▀▀▀──▀▀▀▄─▐──█
+────────────█──▌────────────▐──█
+────────────█──▌─▄▀▀▄───────▐──█
+───────────█▀▌█──▄▄▄───▄▀▀▄─▐──█
+───────────▌─▀───█▄█▌─▄▄▄────█─█
+───────────▌──────▀▀──█▄█▌────█
+───────────█───────────▀▀─────▐
+────────────█──────▌──────────█
+────────────██────█──────────█
+─────────────█──▄──█▄█─▄────█
+─────────────█──▌─▄▄▄▄▄─█──█
+─────────────█─────▄▄──▄▀─█
+─────────────█▄──────────█
+─────────────█▀█▄▄──▄▄▄▄▄█▄▄▄▄▄
+───────────▄██▄──▀▀▀█─────────█
+──────────██▄─█▄────█─────────█
+───▄▄▄▄███──█▄─█▄───█─────────██▄▄▄
+▄█▀▀────█────█──█▄──█▓▓▓▓▓▓▓▓▓█───▀▀▄
+█──────█─────█───████▓▓▓▓▓▓▓▓▓█────▀█
+█──────█─────█───█████▓▓▓▓▓▓▓█──────█
+█─────█──────█───███▀▀▀▀█▓▓▓█───────█
+█────█───────█───█───▄▄▄▄████───────█
+█────█───────█──▄▀───────────█──▄───█
+█────█───────█─▄▀─────█████▀▀▀─▄█───█
+█────█───────█▄▀────────█─█────█────█
+█────█───────█▀───────███─█────█────█
+█─────█────▄█▀──────────█─█────█────█
+█─────█──▄██▀────────▄▀██─█▄───█────█
+█────▄███▀─█───────▄█─▄█───█▄──█────█
+█─▄██▀──█──█─────▄███─█─────█──█────█
+██▀────▄█───█▄▄▄█████─▀▀▀▀█▀▀──█────█
+█──────█────▄▀──█████─────█────▀█───█
+───────█──▄█▀───█████─────█─────█───█
+──────▄███▀─────▀███▀─────█─────█───█
+─────────────────────────────────────
+▀█▀─█▀▄─█─█─█▀────▄▀▀─▀█▀─▄▀▄─█▀▄─█─█
+─█──█▄▀─█─█─█▀────▀▀█──█──█─█─█▄▀─█▄█
+─▀──▀─▀─▀▀▀─▀▀────▀▀───▀───▀──▀─▀─▄▄█
+─────────────────────────────────────
